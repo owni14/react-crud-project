@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const HeaderLayout = styled.section`
   background-color: ${(props) => props.theme.colors.white};
   width: auto;
-  height: 6%;
+  height: 5%;
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
