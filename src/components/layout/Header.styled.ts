@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-const HeaderLayout = styled.section`
-  background-color: black;
-  width: 10px;
+export const Header = styled.section`
+  background-color: ${(props) => props.theme.colors.white};
+  width: auto;
+  height: 6%;
 `;
