@@ -24,5 +24,5 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }  
 
-  a { cursor: pointer; text-decoration: none; }
+  a { cursor: pointer; text-decoration: none; color: inherit }
 `;
