@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const HeaderLayout = styled.section`
-  background-color: ${(props) => props.theme.colors.white};
+export const HeaderLayout = styled.section<{ theme: string }>`
+  background-color: ${({ theme }) => theme.colors.white};
   width: auto;
   height: 5%;
   display: flex;
