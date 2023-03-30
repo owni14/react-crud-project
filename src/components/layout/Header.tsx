@@ -15,10 +15,10 @@ const Header = () => {
         <Link to='Writing'>
           <S.CategoryText>글쓰기</S.CategoryText>
         </Link>
-        <Link to='Login'>
+        <Link to='Sign-in'>
           <S.CategoryText>로그인</S.CategoryText>
         </Link>
-        <Link to='Register'>
+        <Link to='Sign-up'>
           <S.CategoryText>회원가입</S.CategoryText>
         </Link>
       </S.CategoryBox>
