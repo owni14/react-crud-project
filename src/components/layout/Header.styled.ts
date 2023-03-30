@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const HeaderLayout = styled.section<{ theme: string }>`
-  background-color: ${({ theme }) => theme.colors.white};
   width: auto;
   height: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 `;
 
 export const CategoryBox = styled.div`

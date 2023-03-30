@@ -1,9 +1,6 @@
 import Header from './Header';
 import * as S from './Layout.styled';
-
-interface IProps {
-  children: React.ReactNode;
-}
+import { IProps } from '../../../types/index';
 
 const Layout = ({ children }: IProps) => {
   return (
