@@ -4,6 +4,6 @@ export const theme: DefaultTheme = {
   colors: {
     black: '#1e1f1d',
     white: '#ffffff',
-    gray: '#C5C5C5',
+    gray: '#C0C0C0',
   },
 };

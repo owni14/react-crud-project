@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderLayout = styled.section<{ theme: string }>`
   width: auto;
-  height: 5%;
+  max-height: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,10 @@ export const CategoryBox = styled.div`
   gap: 1rem;
 `;
 
-export const CategoryText = styled.span`
+export const CategoryText = styled.span<{ theme: string }>`
   font-size: 1.3rem;
   font-weight: 700;
+  &:hover {
+    color: ${({ theme }) => theme.colors.gray};
+  }
 `;
