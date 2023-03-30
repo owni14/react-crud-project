@@ -7,6 +7,7 @@ export const HeaderLayout = styled.section<{ theme: string }>`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  font-family: GmarketSansTTFBold;
 `;
 
 export const CategoryBox = styled.div`
