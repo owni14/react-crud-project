@@ -15,6 +15,7 @@ const SignIn = () => {
             </S.SignTextBox>
           ))}
         </S.SignTextContainer>
+        <S.SignButton>로그인</S.SignButton>
       </S.SignLayout>
     </Border>
   );

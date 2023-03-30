@@ -43,5 +43,5 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }  
 
-  a { cursor: pointer; text-decoration: none; color: inherit }
+  a, button { cursor: pointer; text-decoration: none; color: inherit }
 `;

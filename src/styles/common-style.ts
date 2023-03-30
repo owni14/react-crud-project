@@ -5,6 +5,7 @@ export const SignLayout = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex: 1;
   gap: 2rem;
   padding: 6rem 4rem 8rem 4rem;
@@ -47,5 +48,18 @@ export const SignInput = styled.input`
   height: 1.8rem;
   border: 1px solid transparent;
   border-radius: 5px;
+`;
+
+export const SignButton = styled.button<{ theme: string }>`
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: ${({ theme }) => theme.colors.black};
+  padding: 0.8rem;
+  color: ${({ theme }) => theme.colors.white};
+  width: 10rem;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.lightBlack};
+  }
 `;
 // ====================================================
