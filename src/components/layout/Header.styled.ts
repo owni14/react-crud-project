@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderLayout = styled.section<{ theme: string }>`
   width: auto;
-  max-height: 5%;
+  height: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;

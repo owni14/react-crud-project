@@ -12,7 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Layout>
-        <S.Main>
+        <S.MainLayout>
           <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/Post' element={<Post />} />
@@ -20,7 +20,7 @@ const App = () => {
             <Route path='/Sign-in' element={<SignIn />} />
             <Route path='/Sign-up' element={<SignUp />} />
           </Routes>
-        </S.Main>
+        </S.MainLayout>
       </Layout>
     </BrowserRouter>
   );
