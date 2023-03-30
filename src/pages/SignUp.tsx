@@ -1,5 +1,6 @@
 import Border from '../components/common/Border';
 import * as S from './SignUp.styled';
+import { SignUpText } from '../data/Text';
 
 const SignUp = () => {
   return (
@@ -7,22 +8,12 @@ const SignUp = () => {
       <S.SignUpLayout>
         <S.Title>회원가입</S.Title>
         <S.TextContainer>
-          <S.TextBox>
-            <S.Text>이메일</S.Text>
-            <S.Input />
-          </S.TextBox>
-          <S.TextBox>
-            <S.Text>닉네임</S.Text>
-            <S.Input />
-          </S.TextBox>
-          <S.TextBox>
-            <S.Text>비밀번호</S.Text>
-            <S.Input />
-          </S.TextBox>
-          <S.TextBox>
-            <S.Text>비밀번호확인</S.Text>
-            <S.Input />
-          </S.TextBox>
+          {SignUpText.map((v, i) => (
+            <S.TextBox key={i}>
+              <S.Text>{v}</S.Text>
+              <S.Input />
+            </S.TextBox>
+          ))}
         </S.TextContainer>
       </S.SignUpLayout>
     </Border>
