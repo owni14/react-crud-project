@@ -1,21 +1,21 @@
 import Border from '../components/common/Border';
-import * as S from './SignUp.styled';
+import * as S from '../styles/common-style';
 import { SignUpText } from '../data/Text';
 
 const SignUp = () => {
   return (
     <Border>
-      <S.SignUpLayout>
-        <S.Title>회원가입</S.Title>
-        <S.TextContainer>
+      <S.SignLayout>
+        <S.SignTitle>회원가입</S.SignTitle>
+        <S.SignTextContainer>
           {SignUpText.map((v, i) => (
-            <S.TextBox key={i}>
-              <S.Text>{v}</S.Text>
-              <S.Input />
-            </S.TextBox>
+            <S.SignTextBox key={i}>
+              <S.SignText>{v}</S.SignText>
+              <S.SignInput />
+            </S.SignTextBox>
           ))}
-        </S.TextContainer>
-      </S.SignUpLayout>
+        </S.SignTextContainer>
+      </S.SignLayout>
     </Border>
   );
 };
