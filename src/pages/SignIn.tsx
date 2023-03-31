@@ -1,12 +1,12 @@
 import Border from '../components/common/Border';
-import * as S from '../styles/common-style';
+import * as S from './Sign.styled';
 import { SignInText } from '../data/Text';
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
   return (
     <Border>
       <S.SignLayout>
-        <S.SignTitle>로그인</S.SignTitle>
         <S.SignTextContainer>
           {SignInText.map((v, i) => (
             <S.SignTextBox key={i}>
@@ -16,6 +16,10 @@ const SignIn = () => {
           ))}
         </S.SignTextContainer>
         <S.SignButton>로그인</S.SignButton>
+        <S.SignTextBox align='center'>
+          <S.SignText size='1rem'>아직 회원이 아니신가요?</S.SignText>
+          <Link to='/Sign-up'>회원가입</Link>
+        </S.SignTextBox>
       </S.SignLayout>
     </Border>
   );

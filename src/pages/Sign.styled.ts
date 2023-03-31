@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// ======= SignUp, SignIn에서 공통으로 사용되는 스타일 =======
+// SignUp, SignIn에서 사용되는 스타일
 export const SignLayout = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,14 +8,7 @@ export const SignLayout = styled.div`
   align-items: center;
   flex: 1;
   gap: 2rem;
-  padding: 6rem 4rem 8rem 4rem;
-`;
-
-export const SignTitle = styled.p`
-  font-size: 2rem;
-  font-family: GmarketSansTTFBold;
-  text-align: center;
-  margin: 0;
+  padding: 6rem 4rem;
 `;
 
 export const SignTextContainer = styled.div`
@@ -28,17 +21,17 @@ export const SignTextContainer = styled.div`
   gap: 1rem;
 `;
 
-export const SignTextBox = styled.div`
+export const SignTextBox = styled.div<{ align?: string }>`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: ${({ align }) => (align ? `${align}` : 'flex-start')};
   justify-content: center;
   gap: 0.5rem;
 `;
 
-export const SignText = styled.p`
-  font-size: 1.2rem;
+export const SignText = styled.p<{ size?: string }>`
+  font-size: ${({ size }) => (size ? `${size}` : '1.2rem')};
   font-family: GmarketSansTTFMedium;
   margin: 0;
 `;
@@ -69,4 +62,3 @@ export const SignButton = styled.button<{ theme: string }>`
     background-color: ${({ theme }) => theme.colors.lightBlack};
   }
 `;
-// ====================================================
