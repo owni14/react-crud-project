@@ -43,15 +43,22 @@ export const SignText = styled.p`
   margin: 0;
 `;
 
-export const SignInput = styled.input`
+export const SignInput = styled.input<{ theme: string }>`
   width: 99%;
   height: 1.8rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 5px;
+  &:hover {
+    border: ${({ theme }) => `2px solid ${theme.colors.lightBlack}`};
+  }
+  &:focus {
+    outline: none;
+    border: ${({ theme }) => `2px solid ${theme.colors.lightBlack}`};
+  }
 `;
 
 export const SignButton = styled.button<{ theme: string }>`
-  border: 1px solid transparent;
+  border: px solid transparent;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.black};
   padding: 0.8rem;
