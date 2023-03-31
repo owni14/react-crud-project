@@ -1,5 +1,4 @@
 import * as S from './Header.styled';
-import { ReactComponent as Logo } from '../../assets/owni.svg';
 import { Link } from 'react-router-dom';
 import { HeaderText } from '../../data/Text';
 
@@ -7,7 +6,7 @@ const Header = () => {
   return (
     <S.HeaderLayout>
       <Link to='/'>
-        <Logo />
+        <S.HeaderTitle>Owni</S.HeaderTitle>
       </Link>
       <S.CategoryBox>
         {HeaderText.map((v, i) => (

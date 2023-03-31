@@ -10,6 +10,14 @@ export const HeaderLayout = styled.section<{ theme: string }>`
   font-family: GmarketSansTTFBold;
 `;
 
+export const HeaderTitle = styled.p`
+  font-family: FoxliteScript;
+  font-size: 3.5rem;
+  margin: 0;
+  width: auto;
+  height: auto;
+`;
+
 export const CategoryBox = styled.div`
   display: flex;
   justify-content: space-between;

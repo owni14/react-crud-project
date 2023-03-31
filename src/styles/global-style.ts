@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import GmarketSansTTFBold from '../assets/fonts/GmarketSansTTFBold.ttf';
 import GmarketSansTTFMedium from '../assets/fonts/GmarketSansTTFMedium.ttf';
 import GmarketSansTTFLight from '../assets/fonts/GmarketSansTTFLight.ttf';
+import FoxliteScript from '../assets/fonts/FoxliteScript.ttf';
 import { normalize } from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
@@ -24,6 +25,12 @@ export const GlobalStyle = createGlobalStyle`
         src: local('GmarketSansTTFLight'), local('GmarketSansTTFLight');
         font-style: normal;
         src: url(${GmarketSansTTFLight}) format('truetype');
+  }
+  @font-face {
+        font-family: 'FoxliteScript';
+        src: local('FoxliteScript'), local('FoxliteScript');
+        font-style: normal;
+        src: url(${FoxliteScript}) format('truetype');
   }
 
   html {
