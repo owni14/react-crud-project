@@ -12,6 +12,7 @@ export const SignLayout = styled.div`
   padding: 6rem 4rem;
 `;
 
+// 하위 컴포넌트를 3개 이상 감쌀 때 Container란 이름 사용
 export const SignTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@ export const SignTextContainer = styled.div`
   gap: 1rem;
 `;
 
+// 하위 컴포넌트 2개 이하일때 Box라는 이름 사용
 export const SignTextBox = styled.div<{ align?: string; direction?: string }>`
   width: 100%;
   display: flex;
