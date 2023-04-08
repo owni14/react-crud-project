@@ -16,9 +16,9 @@ const SignIn = () => {
           ))}
         </S.SignTextContainer>
         <S.SignButton>로그인</S.SignButton>
-        <S.SignTextBox align='center'>
+        <S.SignTextBox align='center' direction='row'>
           <S.SignText size='1rem'>아직 회원이 아니신가요?</S.SignText>
-          <Link to='/Sign-up'>회원가입</Link>
+          <S.LinkText to='/Sign-up'>회원가입</S.LinkText>
         </S.SignTextBox>
       </S.SignLayout>
     </Border>

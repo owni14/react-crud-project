@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 // SignUp, SignIn에서 사용되는 스타일
@@ -21,10 +22,10 @@ export const SignTextContainer = styled.div`
   gap: 1rem;
 `;
 
-export const SignTextBox = styled.div<{ align?: string }>`
+export const SignTextBox = styled.div<{ align?: string; direction?: string }>`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: ${({ direction }) => (direction ? `${direction}` : 'column')};
   align-items: ${({ align }) => (align ? `${align}` : 'flex-start')};
   justify-content: center;
   gap: 0.5rem;
@@ -60,5 +61,11 @@ export const SignButton = styled.button<{ theme: string }>`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.lightBlack};
+  }
+`;
+
+export const LinkText = styled(Link)<{ theme: string }>`
+  &:hover {
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
